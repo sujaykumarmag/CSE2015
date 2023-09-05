@@ -1,4 +1,72 @@
-.f{
+body {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    top:100px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    text-align: right;
+}
+
+.centered-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.centered-form {
+    background-color: #c1dfff;
+    padding: 20px;
+    border: 2px solid #077307;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.form-group input,
+.form-group select {
+    width: 48%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 2px solid #104d10; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.form-group label {
+    flex-basis: 30%; /* Adjust the label width as needed */
+}
+
+.form-group input[type="text"],
+.form-group input[type="digits"],
+.form-group select {
+    width: 100%; /* Full width for input/select */
+}
+
+.message{
+    width: 100%;
+    color: gray;
+    border: 2px solid #104d10; 
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Increase the text size */
+}
+
+.submit{
+    background-color: #015401;
+    color: white;
+    border: 0;
+    padding: 10px 200px;
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Increase the text size */
 }
